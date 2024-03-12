@@ -1,53 +1,64 @@
-# Listin (01 - Firestore)
+# Listin - Collaborative Shop Lists
+Welcome to the Listin - Collaborative Shop Lists repository! This project is a collaborative shopping list app built using Flutter and Firebase, allowing users to create and manage shopping lists with friends and family.
 
-![thumb-flutter-firestore](https://github.com/alura-cursos/flutter_firebase_firestore_first/raw/main/thumbnail.png)
+# Features
+Create Lists: Users can create shopping lists with items they need to buy.
+Real-time Updates: Changes made to a list by any collaborator are instantly synced and visible.
+User Authentication: Secure user authentication powered by Firebase Authentication.
+Cloud Firestore Integration: Data storage and synchronization are handled by Firebase Cloud Firestore.
 
-Aplicação para gerenciar Lista de Compras colaborativas.
+# Prerequisites
+Flutter SDK installed on your machine.
+Firebase project set up with Firestore and Authentication services enabled.
 
-## 🔨 Funcionalidades do projeto
+# Installation
+Clone this repository:
+```
+git clone https://github.com/jpcarvalho23/listin.git
+```
+Navigate into the project directory:
+```
+cd listin
+```
+Run the following command to get the dependencies:
+```
+flutter pub get
+```
+Connect your device or emulator.
 
-#### Motivação
+Run the app:
+```
+flutter run
+```
 
-- Muitas vezes quando vamos fazer feira, temos um teto de gastos que pretendemos investir nas compras. Mas muitas vezes apenas colocamos as compras no carrinho e quando chegamos no caixa temos uma bela surpresa.
+# Usage
+Register or log in with your account.
+Create a new shopping list
+Add items to the list and mark them as purchased when bought.
+Enjoy real-time updates as you interact with the lists.
 
-- Quando estamos fazendo feira com mais alguém, é comum nos separarmos para pegar os itens de forma mais eficiente. Mas às vezes é difícil saber o que a pessoa já pegou.
+# Folder Structure
+```
+lib/
+|-- models/
+|   |-- shopping_list.dart
+|   |-- user.dart
+|-- screens/
+|   |-- add_item_screen.dart
+|   |-- create_list_screen.dart
+|   |-- home_screen.dart
+|   |-- login_screen.dart
+|   |-- register_screen.dart
+|   |-- shopping_list_detail_screen.dart
+|-- services/
+|   |-- auth_service.dart
+|   |-- database_service.dart
+|   |-- storage_service.dart
+|-- widgets/
+|   |-- custom_list_tile.dart
+|   |-- list_item_tile.dart
+|-- main.dart
+```
 
-#### Desenvolvimento
-
-Nesse projeto criaremos a base para o desenvolvimento de um Gerenciador de Lista de compras. Usaremos as ferramentas do Cloud Firestore com Flutter para Adicionar, Ler, Alterar e Remover informações.
-
-![gif-flutter-cloud-firestore](https://github.com/alura-cursos/flutter_firebase_firestore_first/raw/main/gif.gif)
-
-## ✔️ Técnicas e tecnologias utilizadas
-
-- `Adição no Firestore`: Adicionar informações no Banco de Dados do Firestore;
-- `Leitura com Firestore`: Ler manualmente informações do Banco de Dados do Firestore;
-- `Alteração com Firestore`: Alterar informações no Banco de Dados do Firestore;
-- `Remoção com Firestore`: Remover informações no Banco de Dados do Firestore;
-
-## 📁 Acesso ao projeto
-
-Você pode [acessar o código fonte do projeto](https://github.com/alura-cursos/flutter_firebase_firestore_first/tree/aula04) ou [baixá-lo](https://github.com/alura-cursos/flutter_firebase_firestore_first/archive/refs/heads/aula04.zip).
-
-## 🛠️ Abrir e rodar o projeto
-
-**Para executar este projeto você precisa:**
-
-- Ter uma IDE, que pode ser o  [Android Studio](https://developer.android.com/) instalado na sua máquina;
-- Ter a [SDK do Flutter](https://docs.flutter.dev/get-started/install) na versão 3.0.0;
-- Configurar a cópia do projeto com sua conta Firebase com Cloud Firestore;
-
-## 📚 Mais informações do curso
-
-Gostou do projeto e quer conhecer mais? Você pode [acessar o curso]() que desenvolve o projeto desde o começo! Nele você aprenderá:
-
-- Identificar o que é o Firebase;
-- Configurar o Cloud Firestore;
-- Entender como funciona o sistema NoSQL de Coleções, Documentos e Campos no Firestore;
-- Entender como cadastrar, ler, alterar, remover dados e ouvir alterações no Firestore usando o Flutter;
-- Criar um aplicativo funcional de lista de compras usando os conceitos aprendidos;
-- Entenda como deixar uma aplicação mais profissional com temas;
-
-<!-- Esse curso faz parte da [formação de Flutter da Alura](https://cursos.alura.com.br/formacao-flutter) -->
-
-*Te vejo lá!*
+# Contribution
+Contributions are welcome! If you have any suggestions for improvements or new features, feel free to open an issue or submit a pull request.
