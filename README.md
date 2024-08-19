@@ -14,7 +14,7 @@ Firebase project set up with Firestore and Authentication services enabled.
 # Installation
 Clone this repository:
 ```
-git clone https://github.com/jpcarvalho23/listin.git
+git clone https://github.com/jpcarvalhodev/listin.git
 ```
 Navigate into the project directory:
 ```
